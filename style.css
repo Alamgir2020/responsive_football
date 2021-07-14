@@ -1,0 +1,194 @@
+/*------------------
+body css starts
+------------------*/
+
+body {
+  margin: 0;
+}
+
+/*------------------
+body css ends
+------------------*/
+
+/*-----------------------
+ header css starts 
+-----------------------*/
+header {
+  background-color: #2d25a0;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 30px 143px;
+}
+
+.bannerh1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 80px;
+  color: #fff;
+}
+.bannerButton {
+  width: 168px;
+  height: 44px;
+  background-color: #e02c6d;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.bannerButton:hover {
+  transform: scale(2);
+}
+
+.banner-image {
+  width: 556.01px;
+  height: 438px;
+  margin-left: 30px;
+}
+/*-----------------------
+ header css ends 
+-----------------------*/
+
+/*--------------------------
+  section css starts
+---------------------------*/
+section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  padding: 70px 100px;
+  background-color: #f2f2f2;
+}
+article {
+  width: 330px;
+  height: 474px;
+  padding: 10px;
+  /* border: 1px solid black; */
+  box-shadow: 1px 1px 30px #888888;
+}
+
+.articleImage {
+  width: 330px;
+  height: 256px;
+}
+
+/*--------------------------
+  section css ends
+---------------------------*/
+
+/*--------------------------
+  extra section css starts
+---------------------------*/
+.extraSection {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.contactDiv {
+  background-color: #2e2a5e;
+  padding: 20px;
+  color: #f2f2f2;
+}
+
+.noteDiv {
+  background-color: #2e2a5e;
+  color: #f2f2f2;
+  padding: 20px;
+}
+
+.noteDiv A {
+  color: #f2f2f2;
+}
+
+/*--------------------------
+  extra section css ends
+---------------------------*/
+
+/*--------------------------
+  footer css starts
+---------------------------*/
+.footerImage {
+  width: 483.87px;
+  height: 110px;
+}
+.socialDiv {
+  width: 170px;
+  height: 32px;
+  margin: auto;
+}
+.socialDiv > i {
+  font-size: 32px;
+  margin: 3px;
+  color: #969bab;
+}
+
+.footerDiv {
+  margin: auto;
+  width: 485px;
+  height: 215px;
+  /* border: 1px solid black; */
+}
+
+.footerDiv > p {
+  font-size: 24px;
+  /* font-weight: bold; */
+  align-items: center;
+  margin: 20px 100px;
+}
+
+/*--------------------------
+  footer css sends
+---------------------------*/
+
+/*--------------------------
+  media query css for mobile phones starts
+---------------------------*/
+
+@media only screen and (max-width: 688px) {
+  header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 70px 100px;
+    background-color: #f2f2f2;
+  }
+
+  .extraSection {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+/*--------------------------
+  media query css for ipad starts
+---------------------------*/
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 70px 100px;
+    background-color: #f2f2f2;
+  }
+
+  .extraSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*--------------------------
+  media query css for ipad ends
+---------------------------*/
